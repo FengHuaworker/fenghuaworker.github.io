@@ -1,0 +1,7 @@
+[
+null,
+{"id":1,"expanded":false,"name":"市中心","order":1,"parentId":0,"scrollX":1225,"scrollY":1931},
+{"id":2,"expanded":true,"name":"泠七的家","order":3,"parentId":3,"scrollX":819,"scrollY":460},
+{"id":3,"expanded":true,"name":"贫民窟","order":2,"parentId":0,"scrollX":1189,"scrollY":1488},
+{"id":4,"expanded":false,"name":"卫生间","order":4,"parentId":2,"scrollX":819,"scrollY":460}
+]

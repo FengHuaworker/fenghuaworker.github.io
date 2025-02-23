@@ -1,0 +1,5 @@
+[
+null,
+{"id":1,"battlerName":"lingqifight","characterIndex":0,"characterName":"lingqiwalk","classId":1,"equips":[1,1,2,3,0],"faceIndex":0,"faceName":"lingqi","traits":[],"initialLevel":1,"maxLevel":99,"name":"泠七","nickname":"泠七","note":"","profile":"None"},
+{"id":2,"battlerName":"yuelingfight","characterIndex":0,"characterName":"yuelingwalk","classId":1,"equips":[0,0,0,0,0],"faceIndex":0,"faceName":"yuelingface","traits":[],"initialLevel":1,"maxLevel":99,"name":"月灵","nickname":"月灵","note":"","profile":"月灵"}
+]
