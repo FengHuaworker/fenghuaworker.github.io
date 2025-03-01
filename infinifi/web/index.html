@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+
+		<title>infinifi</title>
+
+		<link rel="icon" type="image/png" href="./favicon.png">
+		<link rel="preload" href="./style.css" as="style">
+		<link rel="modulepreload" href="./bg.js">
+		<link rel="modulepreload" href="./script.js">
+		<link rel="preload" href="./images/cat-0.png" as="image">
+		<link rel="preload" href="./images/eeping-cat.png" as="image">
+		<link rel="stylesheet" href="./style.css">
+
+		<meta name="description" content="infinite lo-fi music in the background">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:site" content="@kennethnym">
+		<meta name="twitter:title" content="infinifi">
+		<meta name="twitter:description" content="infinite lo-fi beats in the background">
+	</head>
+
+	<body>
+		<div class="container">
+			<main>
+				<h1 class="header">infinifi</h1>
+				<h2>infinite lo-fi music in the background</h2>
+				<div class="button-container">
+					<button id="play-btn" class="button">play</button>
+				</div>
+
+				<div class="status-bar">
+					<p id="listener-count">0 person tuned in</p>
+					<div id="volume-slider-container">
+						<output id="current-volume-label" for="volume-slider">100%</output>
+						<input id="volume-slider" type="range" min="0" max="100" step="1" />
+					</div>
+				</div>
+
+			</main>
+
+			<aside role="alert" id="notification">
+				<p id="notification-title">a little chatty</p>
+				<p id="notification-body">make milo meow 100 times</p>
+			</aside>
+
+			<img id="cat" src="./images/cat.gif">
+			<img id="eeping-cat" src="./images/eeping-cat.png">
+			<img id="heart" src="./images/heart.png">
+		</div>
+
+		<footer>
+			made by&nbsp<a href="https://kennethnym.com" target="_blank">kennethnym</a>&nbsp;&lt;3 · powered by
+			<a class="fal-link" href="https://fal.ai" target="_blank">
+				<picture>
+					<source srcset="./images/fal-logo-light.svg" media="(prefers-color-scheme: light)" />
+					<source srcset="./images/fal-logo-dark.svg" media="(prefers-color-scheme: dark)" />
+					<img class="fal-logo" fill="none" src="./images/fal-logo-dark.svg">
+				</picture>
+			</a>
+      ·
+			<a target="_blank" rel="noopener noreferrer" href="https://github.com/kennethnym/infinifi">github</a>
+		</footer>
+
+		<canvas id="bg"></canvas>
+
+		<audio id="click-audio" preload="auto" src="./audio/click.wav"></audio>
+		<audio id="click-release-audio" preload="auto" src="./audio/click-release.wav"></audio>
+		<audio id="meow-audio" preload="auto" src="./audio/cat-meow.mp3"></audio>
+		<audio id="achievement-unlocked-audio" preload="auto" src="./audio/achievement-unlocked.mp3"></audio>
+
+		<script type="module" src="./bg.js"></script>
+		<script type="module" src="./script.js"></script>
+	</body>
+</html>
